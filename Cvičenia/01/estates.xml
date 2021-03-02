@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE medi-care SYSTEM "medi.dtd">
+<medi-care language="EN">
+    <hospitals>
+        <hospital>
+            <name>
+                Jupiters Mendery
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>58</number>
+                <state>Campania</state>
+                <postalCode>90530</postalCode>
+            </address>
+            <e-mail>
+                spqr@gmail.com
+            </e-mail>
+            <phone>
+                0902510610
+            </phone>  
+        </hospital>  
+    </hospitals>
+    <heads>
+        <head>
+            <name>
+                Marcus Aurelius
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>52</number>
+                <postalCode>90530</postalCode>
+                <state>Campania</state>
+                <country>Roman Empire</country>
+            </address>
+        </head>
+    </heads>
+    <departments>
+        <department head="Marcus Aurelius">
+            <name>
+                Psychiatry
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>58</number>
+                <state>Campania</state>
+                <postalCode>90530</postalCode>
+            </address>
+            <description>
+                <room-ref roomName="VIP room"></room-ref>
+                <room-ref roomName="Normal room"></room-ref>
+            </description>
+            <room-num>
+                15
+            </room-num>
+            <features>
+                <feature>
+                    Is nice
+                </feature>
+                <feature>
+                    Has windows
+                </feature>
+            </features>
+        </department> 
+    </departments>
+    <rooms>
+        <room department="Psychiatry" comfort="A">
+            <name>
+                VIP room
+            </name>
+            <data>
+                Only for the best peeps
+            </data>
+            <features>
+                <feature>
+                    Big TV
+                </feature>
+                <feature>
+                    Nice bed
+                </feature>
+            </features>
+            <record>
+                <record>
+                    <date>25-3-102</date>
+                    <text>Cleaned</text>
+                </record>
+                <record>
+                    <record>
+                        <date>26-3-102</date>
+                        <text>Cleaned again</text>
+                    </record>
+                </record>
+            </record>
+        </room>
+        <room department="Psychiatry" comfort="F">
+            <name>
+                Normal room
+            </name>
+            <data>
+                Kinda stinky
+            </data>
+            <features>
+                <feature>Smol Tv</feature>
+                <feature>Basic bed</feature>
+            </features>
+        </room>
+    </rooms>
+</medi-care>
