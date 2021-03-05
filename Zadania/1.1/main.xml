@@ -45,7 +45,7 @@
                 <album_count>2</album_count>
                 <albums>
 
-                    <album subgenre_ID="m_1" rating="5">
+                    <album subgenre_ID="m_1" rating="5" popularity="high">
                         
                         <name>Californication</name>
                         <release_date>8-6-1999</release_date>
@@ -66,6 +66,7 @@
                             </song>
 
                             <song rating="5">
+                                <favourite_in_album />
                                 <track_num>3</track_num>
                                 <name>Scar Tissue</name>
                                 <length>3:36</length>
@@ -147,7 +148,7 @@
 
                     </album>
 
-                    <album subgenre_ID="m_1" rating="4">
+                    <album subgenre_ID="m_1" rating="4" popularity="average">
                         
                         <name>The Getaway</name>
                         <release_date>17-6-2016</release_date>
@@ -161,6 +162,7 @@
                             </song>
 
                             <song rating="5">
+                                <favourite_in_album />
                                 <track_num>2</track_num>
                                 <name>Dark Necessities</name>
                                 <length>5:02</length>
@@ -195,7 +197,7 @@
                 <followers>17 520 663</followers>
                 <album_count>1</album_count>
                 <albums>
-                    <album subgenre_ID="m_2" rating="4">
+                    <album subgenre_ID="m_2" rating="4" popularity="low">
                         <name>Ghost Stories</name>
                         <release_date>16-11-2014</release_date>
                         <track_count>4</track_count>
@@ -207,6 +209,7 @@
                             </song>
 
                             <song rating="5">
+                                <favourite_in_album />
                                 <track_num>2</track_num>
                                 <name>Magic</name>
                                 <length>4:45</length>
@@ -234,7 +237,7 @@
                 <followers>12 580 653</followers>
                 <album_count>1</album_count>
                 <albums>
-                    <album subgenre_ID="m_3" rating="4">
+                    <album subgenre_ID="m_3" rating="4" popularity="high">
                         <name>Memory</name>
                         <release_date>7-11-2016</release_date>
                         <track_count>7</track_count>
@@ -246,6 +249,7 @@
                             </song>
 
                             <song rating="5">
+                                <favourite_in_album />
                                 <track_num>2</track_num>
                                 <name>Décalcomanie</name>
                                 <length>3:36</length>
@@ -293,7 +297,7 @@
                 <followers>50 480 854</followers>
                 <album_count>2</album_count>
                 <albums>
-                    <album subgenre_ID="m_3" rating="5">
+                    <album subgenre_ID="m_3" rating="5" popularity="high">
                         <name>MAP OF THE SOUL:PERSONA</name>
                         <release_date>12-4-2019</release_date>
                         <track_count>7</track_count>
@@ -306,6 +310,7 @@
                             </song>
 
                             <song rating="5">
+                                <favourite_in_album />
                                 <track_num>2</track_num>
                                 <name>Boy With Luv</name>
                                 <length>3:50</length>
@@ -347,13 +352,14 @@
                         </songs>
                         
                     </album>
-                    <album subgenre_ID="m_3" rating="5">
+                    <album subgenre_ID="m_3" rating="5" popularity="average">
 
                         <name>Black Swan</name>
                         <release_date>17-1-2020</release_date>
                         <track_count>1</track_count>
                         <songs>
                             <song rating="5">
+                                <favourite_in_album />
                                 <track_num>1</track_num>
                                 <name>Black Swan</name>
                                 <length>3:18</length>
@@ -427,14 +433,13 @@
                         <episode_num>1</episode_num>
                         <release_date>30-10-2013</release_date>
                         <length>2:15</length>
-                        <description>
+                        <ep_description>
                             Our pilot episode, a bite-sized story of great drama, suspense and horror.
                             "So ur with ur honey and yur making out when the phone rigns..."
-                        </description>
-                        <guests>
                             <guest>Dennis Magat</guest>
                             <guest>Angi Viper</guest>
-                        </guests>
+                        </ep_description>
+                        
                     </episode>
 
                     <episode rating="5">
@@ -442,13 +447,11 @@
                         <episode_num>2</episode_num>
                         <release_date>18-11-2013</release_date>
                         <length>23:42</length>
-                        <description>
+                        <ep_description>
                             Two people spending a night in a hotel room tell each other scary stories, and their imaginations begin to run wild...
-                        </description>
-                        <guests>
                             <guest>Jason Caits-Cheverst</guest>
                             <guest>Sarah Llewellyn</guest>
-                        </guests>
+                        </ep_description>
                     </episode>
 
                     <episode rating="4">
@@ -456,9 +459,9 @@
                         <episode_num>3</episode_num>
                         <release_date>29-11-2013</release_date>
                         <length>17:18</length>
-                        <description>
+                        <ep_description>
                             In a small town, an old man recounts the strange tale of Jacob Emory, whose art had vibrancy and life... Literally.
-                        </description>
+                        </ep_description>
                     </episode>
                 </episodes>
 
@@ -488,13 +491,11 @@
                         <episode_num>1</episode_num>
                         <release_date>24-7-2020</release_date>
                         <length>1:10:01</length>
-                        <description>
+                        <ep_description>
                             Záchranár Robo nám porozpráva napríklad aj o tom, prečo sa mu
                             už ani neoplatí spoznávať sa s novými lekármi, ktorí k nim prídu.
-                        </description>
-                        <guests>
                             <guest>Róbert Froš</guest>
-                        </guests>
+                        </ep_description>
                     </episode>
 
                     <episode rating="4">
@@ -502,14 +503,12 @@
                         <episode_num>2</episode_num>
                         <release_date>30-7-2020</release_date>
                         <length>46:30</length>
-                        <description>
+                        <ep_description>
                             Čerstvá doktorka Lucka, ktorá bola kedysi netopierom, sa s nami
                             podelí o pohľad začínajúceho lekára na slovenské zdravotníctvo
                             a školstvo. Prečo skoro všetci jej spolužiaci túžia byť chirurgami?
-                        </description>
-                        <guests>
                             <guest>MUDr. Lucia Weiss</guest>
-                        </guests>
+                        </ep_description>
                     </episode>
                 </episodes>
             </podcast>
@@ -537,30 +536,14 @@
                         <episode_num>1</episode_num>
                         <release_date>29-10-2020</release_date>
                         <length>21:45</length>
-                        <description>
+                        <ep_description>
                             Svoje obete, prevažne staršie ženy, vraždil výhradne v noci. Na konci
                             svojho vyčíňania za sebou nechal 9 obetí. Čo nám o ňom prezrádza jeho
                             modus operandi?
-                        </description>
-                        <guests>
                             <guest>MUDr. Svetozár Droba</guest>
-                        </guests>
+                        </ep_description>
                     </episode>
 
-                    <episode rating="4">
-                        <name>Všetci chcú byť chirurgovia</name>
-                        <episode_num>2</episode_num>
-                        <release_date>30-7-2020</release_date>
-                        <length>46:30</length>
-                        <description>
-                            Čerstvá doktorka Lucka, ktorá bola kedysi netopierom, sa s nami
-                            podelí o pohľad začínajúceho lekára na slovenské zdravotníctvo
-                            a školstvo. Prečo skoro všetci jej spolužiaci túžia byť chirurgami?
-                        </description>
-                        <guests>
-                            <guest>MUDr. Lucia Weiss</guest>
-                        </guests>
-                    </episode>
                 </episodes>
             </podcast>
 

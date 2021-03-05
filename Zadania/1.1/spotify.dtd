@@ -50,7 +50,7 @@
 <!ELEMENT release_window (day, hour, periodicity)>
 <!ELEMENT description ANY>
 <!ELEMENT episodes (episode+)>
-<!ATTLIST podcast subgenre_ID CDATA #REQUIRED>
+<!ATTLIST podcast subgenre_ID IDREF #REQUIRED>
 
 <!-- Depth 5 -->
 
@@ -66,7 +66,7 @@
 <!ELEMENT periodicity (#PCDATA)>
 
 <!-- episodes -->
-<!ELEMENT episode (name, episode_num, release_date, length, description, guests?)>
+<!ELEMENT episode (name, episode_num, release_date, length, ep_description, guests?)>
 
 <!-- Depth 6 -->
 
@@ -78,26 +78,28 @@
 <!ELEMENT release_date (#PCDATA)>
 <!ELEMENT track_count (#PCDATA)>
 <!ELEMENT songs (song+)>
-<!ATTLIST album subgenre_ID CDATA #REQUIRED>
+<!ATTLIST album subgenre_ID IDREF #REQUIRED>
 <!ATTLIST album rating (0|1|2|3|4|5) "0">
+<!ATTLIST album popularity (high|average|low) "low">
 
 <!-- episode -->
 <!ELEMENT episode_num (#PCDATA)>
 <!ELEMENT length (#PCDATA)>
-<!ELEMENT guests (guest+)>
+<!ELEMENT ep_description (#PCDATA|guest)*>
 <!ATTLIST episode rating (0|1|2|3|4|5) "0">
 
 <!-- Depth 7 -->
 
 <!-- songs -->
-<!ELEMENT song (track_num, name, length, featurings?)>
+<!ELEMENT song (favourite_in_album?, track_num, name, length, featurings?)>
 
-<!-- guests -->
+<!-- ep_description -->
 <!ELEMENT guest (#PCDATA)>
 
 <!-- Depth 8 -->
 
 <!-- song -->
+<!ELEMENT favourite_in_album EMPTY>
 <!ELEMENT track_num (#PCDATA)>
 <!ELEMENT featurings (featuring+)>
 <!ATTLIST song rating (0|1|2|3|4|5) "0">
