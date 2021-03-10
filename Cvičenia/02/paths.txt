@@ -1,0 +1,9 @@
+1)  a)/world-of-health//heads
+    b)/world-of-health//hospital/name[text()]
+    c)/world-of-health//head[not(preceding-sibling::head/address/country = address/country)]/address/country
+    d)/world-of-health/heads/head[@head_ID='h_1']/name[text()]
+2)  /world-of-health/heads//head[address/country='Slovenská Republika']/address/postalCode
+3)  /world-of-health//room[@department != 'd_2' and @comfort = 'C']/rate
+4)  /world-of-health/departments/department[1]/features/feature[3]
+5)  /world-of-health//department[count(./features/feature)>1 and not(@head)]
+6)  /world-of-health//head[not(//department/@head = @head_ID)]

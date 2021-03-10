@@ -1,0 +1,60 @@
+<!ENTITY % standardMode "IGNORE">
+<!ENTITY % verboseMode "INCLUDE">
+
+<!ELEMENT medi-care (hospitals, heads, departments, rooms)>
+<!ATTLIST medi-care language CDATA #FIXED "EN">
+<!ELEMENT hospitals (hospital*)>
+<!ELEMENT heads (head*)>
+<!ELEMENT departments (department*)>
+<!ELEMENT rooms (room*)>
+
+<!ELEMENT hospital ((name, address, e-mail, phone)|
+                    (name, address, phone, e-mail)|
+                    (name, e-mail, phone, address)|
+                    (name, e-mail, address, phone)|
+                    (name, phone, e-mail, address)|
+                    (name, phone, address, e-mail))>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT e-mail (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+
+<!ELEMENT head (name, address)>
+<!ATTLIST head head_ID ID #REQUIRED>
+
+<!ELEMENT department (name, address, description, room-num, features?)>
+<!ELEMENT room-ref EMPTY>
+<!ATTLIST room-ref room IDREF #REQUIRED>
+<!ELEMENT description (#PCDATA|room-ref)*>
+<!ELEMENT room-num (#PCDATA)>
+<!ATTLIST department head IDREF #IMPLIED>
+<!ATTLIST department department_ID ID #REQUIRED>
+
+<![%standardMode;[
+<!ELEMENT room (name, features?, record?)>
+]]>
+<![%verboseMode;[
+<!ELEMENT room (name, data, features?, record?)>
+]]>
+
+<!ELEMENT data ANY>
+<!ELEMENT features ((feature,feature)|
+                    (feature,feature,feature)|
+                    (feature,feature,feature,feature)|
+                    (feature,feature,feature,feature,feature))>
+<!ELEMENT feature (#PCDATA)>
+<!ATTLIST room department IDREF #REQUIRED>
+<!ATTLIST room room_ID ID #REQUIRED>
+<!ATTLIST room comfort (A|B|C|D|E|F) "F">
+
+<!ELEMENT address ((street, number, postalCode, state, country)|(street, number, state, postalCode))>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT postalCode (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT country (#PCDATA)>
+
+<!ELEMENT record ((record+)|(date, text))>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+
+<!ENTITY superscript "&#178;">

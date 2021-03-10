@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE medi-care SYSTEM "medi.dtd">
+<medi-care language="EN">
+    <hospitals>
+        <hospital>
+            <name>
+                Jupiters Mendery
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>58</number>
+                <state>Campania</state>
+                <postalCode>90530</postalCode>
+            </address>
+            <e-mail>
+                spqr@gmail.com
+            </e-mail>
+            <phone>
+                0902510610
+            </phone>  
+        </hospital>  
+    </hospitals>
+    <heads>
+        <head head_ID="h_1">
+            <name>
+                Marcus Aurelius
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>52</number>
+                <postalCode>90530</postalCode>
+                <state>Campania</state>
+                <country>Roman Empire</country>
+            </address>
+        </head>
+
+        <head head_ID="h_2">
+            <name>
+                Marcus Augustus
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>52</number>
+                <postalCode>90530</postalCode>
+                <state>Campania</state>
+                <country>Roman Empire</country>
+            </address>
+        </head>
+
+        <head head_ID="h_3">
+            <name>
+                Hypocrates
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>52</number>
+                <postalCode>90530</postalCode>
+                <state>Athica</state>
+                <country>Greece</country>
+            </address>
+        </head>
+    </heads>
+    <departments>
+        <department head="h_1" department_ID="d_1">
+            <name>
+                Psychiatry
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>58</number>
+                <state>Campania</state>
+                <postalCode>90530</postalCode>
+            </address>
+            <description>
+                For the mind stuff
+                <room-ref room="r_1"></room-ref>
+                <room-ref room="r_2"></room-ref>
+            </description>
+            <room-num>
+                15
+            </room-num>
+            <features>
+                <feature>
+                    Is nice
+                </feature>
+                <feature>
+                    Has windows
+                </feature>
+                <feature>
+                    Big Fun
+                </feature>
+            </features>
+        </department>
+
+        <department head="h_2" department_ID="d_2">
+            <name>
+                Surgery
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>58</number>
+                <state>Campania</state>
+                <postalCode>90530</postalCode>
+            </address>
+            <description>
+                Cut cut
+                <room-ref room="r_3"></room-ref>
+            </description>
+            <room-num>
+                15
+            </room-num>
+            <features>
+                <feature>
+                    Sharp
+                </feature>
+                <feature>
+                    Sanitary
+                </feature>
+                <feature>
+                    Eazy access
+                </feature>
+            </features>
+        </department>
+        
+        <department department_ID="d_3">
+            <name>
+                Internal
+            </name>
+            <address>
+                <street>Germanica</street>
+                <number>58</number>
+                <state>Campania</state>
+                <postalCode>90530</postalCode>
+            </address>
+            <description>
+                Cut cut
+            </description>
+            <room-num>
+                15
+            </room-num>
+            <features>
+                <feature>
+                    Sharp
+                </feature>
+                <feature>
+                    Sanitary
+                </feature>
+            </features>
+        </department> 
+    </departments>
+
+    
+    <rooms>
+        <room department="d_1" comfort="A" room_ID="r_1">
+            <name>
+                VIP room
+            </name>
+            <data>
+                Only for the best peeps
+                &lt;button class=&quot;q-btn&quot;&gt;Click&lt;/button&gt;
+                Room size = 25m&superscript;
+                <![CDATA[ <button class="q-btn">Click</button>]]>
+            </data>
+            <features>
+                <feature>
+                    Big TV
+                </feature>
+                <feature>
+                    Nice bed
+                </feature>
+            </features>
+            <record>
+                <record>
+                    <date>25-3-102</date>
+                    <text>Cleaned</text>
+                </record>
+                <record>
+                    <record>
+                        <date>26-3-102</date>
+                        <text>Cleaned again</text>
+                    </record>
+                </record>
+            </record>
+        </room>
+        <room department="d_1" comfort="C" room_ID="r_2">
+            <name>
+                Normal room
+            </name>
+            <data>
+                Kinda stinky
+            </data>
+            <features>
+                <feature>Smol Tv</feature>
+                <feature>Basic bed</feature>
+            </features>
+        </room>
+
+        <room department="d_2" comfort="C" room_ID="r_3">
+            <name>
+                Normal room
+            </name>
+            <data>
+                Kinda stinky
+            </data>
+            <features>
+                <feature>Smol Tv</feature>
+                <feature>Basic bed</feature>
+            </features>
+        </room>
+    </rooms>
+</medi-care>
