@@ -1,0 +1,6 @@
+7) //room[rate>avg(//room/rate)]
+8) //head[//department[//room[descendant::feature[text()]='televízor']/@department = @idDepartment]/@head = @idHead]/name[text()]
+9) sum(//room[(./@comfort = 'C' or ./@comfort = 'D') and (./@department = //department[@head = 'h1']/@idDepartment)]/rate)
+10)//room[(not(following::room) and not(descendant::room)) or (not(preceding::room) and not(ancestor::room))]/@idRoom
+11)//room[descendant::room[./@idRoom='r4a1'] and not(ancestor::room)]/name[text()]
+12) //room[not(descendant::room)]/@comfort
