@@ -5,13 +5,13 @@ predikát testujúci hodnotu atribútu:
             hodnotu atribútu @popularity rovnú 'high'
 
 predikát testujúci existenciu podriadeného elementu:
-    dopyt:  /spotify/music/artists/artist/albums/album/songs/song[(descendant::favourite_in_album) and (track_num>2)]
+    dopyt:  /spotify/music/artists/artist/albums/album/songs/song[(favourite_in_album) and (track_num>2)]
     opis:   dopyt vracia najobľúbenejšiu pesničku (obsahuje element "favourite_in_album"), 
             ktorá sa nachádza v /spotify/music/artists/artist/albums/album/songs/ a jej element "track_num" má hodnotu väčšiu ako 2
 
 predikát testujúci neexistenciu podriadeného elementu:
-    dopyt:  /spotify/other_content/podcasts/podcast[name = 'Midnight Marinara']/episodes/episode[not(descendant::guest)]/length
-    opis:   dopyt vracia dĺžku epizódy podcastu, ktorý sa nachádza v /spotify/other_content/podcasts, jeho element "name"
+    dopyt:  /spotify/other_content/podcasts/podcast[name = 'Midnight Marinara']/episodes/episode/ep_description[not(guest)]
+    opis:   dopyt vracia description epizódy podcastu, ktorý sa nachádza v /spotify/other_content/podcasts, jeho element "name"
             má hodnotu 'Midnight Marinara' a dotyčná epizóda nemá hostí (neobsahuje element "guest")
 
 predikát testujúci pozíciu:
