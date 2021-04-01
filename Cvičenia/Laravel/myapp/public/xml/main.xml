@@ -215,7 +215,7 @@
                                 <length>4:45</length>
                             </song>
 
-                            <song rating="3">
+                            <song rating="2">
                                 <track_num>7</track_num>
                                 <name>Oceans</name>
                                 <length>5:22</length>
@@ -273,7 +273,7 @@
                                 <length>3:33</length>
                             </song>
 
-                            <song rating="4">
+                            <song rating="1">
                                 <track_num>6</track_num>
                                 <name>DAB DAB</name>
                                 <length>2:50</length>
@@ -352,13 +352,13 @@
                         </songs>
                         
                     </album>
-                    <album subgenre_ID="m_3" rating="5" popularity="average">
+                    <album subgenre_ID="m_3" rating="2" popularity="average">
 
                         <name>Black Swan</name>
                         <release_date>17-1-2020</release_date>
                         <track_count>1</track_count>
                         <songs>
-                            <song rating="5">
+                            <song rating="2">
                                 <favourite_in_album />
                                 <track_num>1</track_num>
                                 <name>Black Swan</name>
