@@ -5,6 +5,7 @@
         <html>
             <head>
                 <title>Obvious Spotify Rip-Off</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"/>
                 <link rel="stylesheet" type="text/css" href="/css/web.css" media="screen"/>
             </head>
@@ -32,9 +33,9 @@
                                 <xsl:attribute name="class">best</xsl:attribute>
                                 <th>Artist</th>
                                 <th>Song Name</th>
-                                <th>Song Rating</th>
+                                <th class="rtg">Song Rating</th>
                                 <th>Album Name</th>
-                                <th>Album Rating</th>
+                                <th class="rtg">Album Rating</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,9 +51,9 @@
                                 <xsl:attribute name="class">bad</xsl:attribute>
                                 <th>Artist</th>
                                 <th>Song Name</th>
-                                <th>Song Rating</th>
+                                <th class="rtg">Song Rating</th>
                                 <th>Album Name</th>
-                                <th>Album Rating</th>
+                                <th class="rtg">Album Rating</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -84,6 +85,10 @@
                 <div class="sk_pods">
                     <xsl:apply-templates select="/spotify/other_content/podcasts/podcast[language='Slovak']"></xsl:apply-templates>
                 </div>
+
+                <footer>
+                    <div></div>
+                </footer>
             </body>
         </html>
     </xsl:template>
@@ -170,14 +175,14 @@
         <td>
             <xsl:value-of select="name"></xsl:value-of>
         </td>
-        <td>
+        <td class="rtg">
             <xsl:value-of select="@rating"></xsl:value-of>
             <xsl:text>/5</xsl:text>
         </td>
         <td>
             <xsl:value-of select="$alb_nm"></xsl:value-of>
         </td>
-        <td>
+        <td class="rtg">
             <xsl:value-of select="$alb_rtg"></xsl:value-of>
             <xsl:text>/5</xsl:text>
         </td>
@@ -188,7 +193,7 @@
             <xsl:attribute name="class">spooky</xsl:attribute>
             <h5><xsl:value-of select="name"></xsl:value-of> by <xsl:value-of select="author"></xsl:value-of></h5>
             <p><xsl:value-of select="description"></xsl:value-of></p>
-            <table border="1">
+            <table border="1" class="ep_table">
                 <thead>
                     <tr class="header">
                         <th>Episode number</th>
@@ -266,7 +271,7 @@
             </xsl:copy>
         </p>
 
-        <table border="1">
+        <table border="1" class="ep_table">
             <thead>
                 <tr class="header">
                     <th>Episode number</th>

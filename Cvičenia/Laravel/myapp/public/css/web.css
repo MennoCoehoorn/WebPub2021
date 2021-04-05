@@ -1,18 +1,33 @@
+.wrapper-container{
+    max-width: 1024px;
+	margin: 0 auto;
+}
+
 .bad {
     background-color: red;
 }
 .picked_songs{
+    margin-right: 100px;
+    margin-left: 10%;
+    margin-bottom: 100px;
     float: right;
-    margin-right: 150px;
+    max-width: 30%;
 }
 .header{
     background-color: #9acd32;
+    font-weight: bold;
 }
 .album{
     background-color: #ff00ff;
+    font-weight: bold;
 }
 .best{
     background-color: #fcba03;
+    font-weight: bold;
+    font-style: italic;
+}
+tr.best{
+    font-style:normal;
 }
 .spooky{
     border:2px black solid;
@@ -35,12 +50,27 @@
     text-align: center;
     border: 2px black solid;
 }
+footer div{
+    min-width: 99%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 35px;
+    background-color:greenyellow;
+    border: 2px black solid;
+    height: 150px;
+}
+td{
+    padding: 4px;
+}
 .title h1{
     text-decoration: underline;
     font-weight: bold;
 }
 .all_songs{
-    margin-left: 150px;
+    margin-right: 10%;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    max-width: 40%;
 }
 .sub_title{
     margin-top: 15px;
@@ -66,4 +96,43 @@
 }
 table{
     text-align: center;
+}
+div h5{
+    text-decoration: underline;
+}
+.picked_songs table{
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 800px){
+    .picked_songs{
+        float: none;
+        max-width: calc(100%-100px);
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .all_songs{
+        max-width: calc(100%-100px);
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 450px){
+    .picked_songs{
+        max-width: calc(100%-60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .all_songs{
+        max-width: calc(100%-60px);
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .ep_table{
+        display: none;
+    }
+    .rtg{
+        display: none;
+    }
+
 }
