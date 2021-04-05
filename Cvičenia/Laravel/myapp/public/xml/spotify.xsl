@@ -5,49 +5,92 @@
         <html>
             <head>
                 <title>Obvious Spotify Rip-Off</title>
+                <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"/>
+                <link rel="stylesheet" type="text/css" href="/css/web.css" media="screen"/>
             </head>
             <body>
-                <h1 style="text-decoration: underline;">Welcome to Not-Spotify</h1>
+                <div class="title">
+                    <h1>Welcome to Not-Spotify</h1>
+                </div>
+                
+
+                <div class="sub_title">
+                    <hr />
+                    <h2>Music</h2>
+                    <hr />
+                </div>
+                
+                
+                <div>
+                    <xsl:attribute name="class">picked_songs</xsl:attribute>
+                    
+                    <h3>Best songs</h3>
+                    <xsl:element name="table">
+                        <xsl:attribute name="border">1</xsl:attribute>
+                        <thead>
+                            <tr>
+                                <xsl:attribute name="class">best</xsl:attribute>
+                                <th>Artist</th>
+                                <th>Song Name</th>
+                                <th>Song Rating</th>
+                                <th>Album Name</th>
+                                <th>Album Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <xsl:apply-templates select="/spotify/music/artists/artist/albums/album/songs/song[(@rating &gt; 4) and (ancestor::album/@rating &gt; 4)]"/>
+                        </tbody>
+                    </xsl:element>
+                    
+                    <h3>Worst songs</h3>
+                    <xsl:element name="table">
+                        <xsl:attribute name="border">1</xsl:attribute>
+                        <thead>
+                            <tr>
+                                <xsl:attribute name="class">bad</xsl:attribute>
+                                <th>Artist</th>
+                                <th>Song Name</th>
+                                <th>Song Rating</th>
+                                <th>Album Name</th>
+                                <th>Album Rating</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <xsl:apply-templates select="/spotify/music/artists/artist/albums/album/songs/song[(@rating &lt; 3) and (ancestor::album/@rating &gt; 3)]"/>
+                        </tbody>
+                    </xsl:element>
+                </div>
+
+                <div class="all_songs">
+                    <h3>All music artists and their music</h3>
+                    <table border="1">
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <xsl:apply-templates select="spotify/music/artists/artist"/>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="sub_title">
+                    <hr />
+                    <h2>Podcasts</h2>
+                    <hr />
+                </div>
+                <h4>Spooky podcasts:</h4>
+                <xsl:apply-templates select="/spotify/other_content/podcasts/podcast[@subgenre_ID='p_1']"></xsl:apply-templates>
                 <hr/>
-
-                <h2>Music</h2>
-                <hr/>
-
-                <h3>All music artists and their music</h3>
-                <table border="1">
-                    <thead>
-                    </thead>
-                    <tbody>
-                        <xsl:apply-templates select="spotify/music/artists/artist"/>
-                    </tbody>
-                </table>
-
-                <h3>Bad songs</h3>
-                <table border="1">
-                    <thead>
-                        <tr bgcolor="red">
-                            <th>Artist</th>
-                            <th>Song Name</th>
-                            <th>Song Rating</th>
-                            <th>Album Name</th>
-                            <th>Album Rating</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <xsl:apply-templates select="/spotify/music/artists/artist/albums/album/songs/song[(@rating &lt; 3) and (ancestor::album/@rating &gt; 3)]"/>
-                    </tbody>
-                </table>
-
-                <h2>Podcasts</h2>
-                    <h4>Spooky podcasts:</h4>
-                    <xsl:apply-templates select="/spotify/other_content/podcasts/podcast[@subgenre_ID='p_1']"></xsl:apply-templates>
-                <hr/>
+                <h4>Slovak podcasts:</h4>
+                <div class="sk_pods">
+                    <xsl:apply-templates select="/spotify/other_content/podcasts/podcast[language='Slovak']"></xsl:apply-templates>
+                </div>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="spotify/music/artists/artist">
-        <tr bgcolor="#9acd32">
+        <tr>
+            <xsl:attribute name="class">header</xsl:attribute>
             <td>
                 <xsl:value-of select="name"></xsl:value-of>
             </td>
@@ -64,7 +107,8 @@
     </xsl:template>
 
     <xsl:template match="albums/album">
-        <tr bgcolor="#ff00ff">
+        <tr>
+            <xsl:attribute name="class">album</xsl:attribute>
             <td colspan="2">
                 <xsl:value-of select="name"></xsl:value-of> 
             </td>
@@ -101,24 +145,27 @@
     </xsl:template>
 
     <xsl:template match="song" mode="best">
-        <td bgcolor="#fcba03">
+        <td>
+            <xsl:attribute name="class">best</xsl:attribute>
             <xsl:value-of select="name"></xsl:value-of>
         </td>
-        <td bgcolor="#fcba03">
+        <td>
+            <xsl:attribute name="class">best</xsl:attribute>
             <xsl:value-of select="length"></xsl:value-of>
         </td>
-        <td bgcolor="#fcba03">
+        <td>
+            <xsl:attribute name="class">best</xsl:attribute>
             <xsl:value-of select="@rating"></xsl:value-of>
             <xsl:text>/5</xsl:text>
         </td>
     </xsl:template>
 
-    <xsl:template match="song" mode="bad">
+    <xsl:template match="song" mode="pick">
         <xsl:param name="alb_nm"></xsl:param>
         <xsl:param name="alb_rtg"></xsl:param>
         <xsl:param name="artist"></xsl:param>
         <td>
-            <xsl:value-of select="$artist"></xsl:value-of>
+            <xsl:copy-of select="$artist"></xsl:copy-of>
         </td>
         <td>
             <xsl:value-of select="name"></xsl:value-of>
@@ -137,12 +184,13 @@
     </xsl:template>
 
     <xsl:template match="/spotify/other_content/podcasts/podcast[@subgenre_ID='p_1']">
-        <div style="border:2px black solid;">
-            <h5 style="color:red; margin: 15px;"><xsl:value-of select="name"></xsl:value-of> by <xsl:value-of select="author"></xsl:value-of></h5>
-            <p style="margin: 15px;"><xsl:value-of select="description"></xsl:value-of></p>
-            <table border="1" style="margin: 15px;">
+        <div>
+            <xsl:attribute name="class">spooky</xsl:attribute>
+            <h5><xsl:value-of select="name"></xsl:value-of> by <xsl:value-of select="author"></xsl:value-of></h5>
+            <p><xsl:value-of select="description"></xsl:value-of></p>
+            <table border="1">
                 <thead>
-                    <tr>
+                    <tr class="header">
                         <th>Episode number</th>
                         <th>Episode name</th>
                         <th>Release date</th>
@@ -182,7 +230,7 @@
             </td>
             <td>
                 <xsl:if test="@rating=5">
-                    <xsl:attribute name="bgcolor">#fcba03</xsl:attribute>
+                    <xsl:attribute name="class">best</xsl:attribute>
                 </xsl:if>
                 <xsl:value-of select="@rating"></xsl:value-of>
                 <xsl:text>/5</xsl:text>
@@ -192,11 +240,48 @@
 
     <xsl:template match="/spotify/music/artists/artist/albums/album/songs/song[(@rating &lt; 3) and (ancestor::album/@rating &gt; 3)]">
         <tr>
-            <xsl:apply-templates select="." mode="bad">
+            <xsl:apply-templates select="." mode="pick">
                 <xsl:with-param name="alb_nm" select="ancestor::album/name"></xsl:with-param>
                 <xsl:with-param name="alb_rtg" select="ancestor::album/@rating"></xsl:with-param>
                 <xsl:with-param name="artist" select="ancestor::artist/name"></xsl:with-param>
             </xsl:apply-templates>
         </tr>
+    </xsl:template>
+
+    <xsl:template match="/spotify/music/artists/artist/albums/album/songs/song[(@rating &gt; 4) and (ancestor::album/@rating &gt; 4)]">
+        <tr>
+            <xsl:apply-templates select="." mode="pick">
+                <xsl:with-param name="alb_nm" select="ancestor::album/name"></xsl:with-param>
+                <xsl:with-param name="alb_rtg" select="ancestor::album/@rating"></xsl:with-param>
+                <xsl:with-param name="artist" select="ancestor::artist/name"></xsl:with-param>
+            </xsl:apply-templates>
+        </tr>
+    </xsl:template>
+
+    <xsl:template match="/spotify/other_content/podcasts/podcast[language='Slovak']">
+        <h5><xsl:value-of select="name"></xsl:value-of></h5>
+        <p>
+            <xsl:copy>
+                <xsl:apply-templates select="description"></xsl:apply-templates>
+            </xsl:copy>
+        </p>
+
+        <table border="1">
+            <thead>
+                <tr class="header">
+                    <th>Episode number</th>
+                    <th>Episode name</th>
+                    <th>Release date</th>
+                    <th>Runtime</th>
+                    <th>Guests</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <xsl:for-each select="episodes/episode">
+                    <xsl:call-template name="episodetemp"></xsl:call-template>
+                </xsl:for-each>
+            </tbody>
+        </table>
     </xsl:template>
 </xsl:stylesheet>

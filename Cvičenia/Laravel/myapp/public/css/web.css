@@ -1,0 +1,69 @@
+.bad {
+    background-color: red;
+}
+.picked_songs{
+    float: right;
+    margin-right: 150px;
+}
+.header{
+    background-color: #9acd32;
+}
+.album{
+    background-color: #ff00ff;
+}
+.best{
+    background-color: #fcba03;
+}
+.spooky{
+    border:2px black solid;
+}
+.spooky h5{
+    font-weight: bold;
+    color:red;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.spooky p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.spooky table{
+    margin: 15px;
+}
+.title{
+    background-color:greenyellow;
+    text-align: center;
+    border: 2px black solid;
+}
+.title h1{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.all_songs{
+    margin-left: 150px;
+}
+.sub_title{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.sk_pods{
+    border: 2px black solid;
+    margin-top: 15px;
+}
+.sk_pods h5{
+    font-weight: bold;
+    color: blue;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.sk_pods p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.sk_pods table{
+    margin: 15px;
+}
+table{
+    text-align: center;
+}
