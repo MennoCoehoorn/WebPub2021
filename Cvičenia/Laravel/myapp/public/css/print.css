@@ -1,0 +1,43 @@
+@page { size: A4;  
+    margin: 20mm; 
+}
+
+body{
+    text-align: center;
+}
+.album{
+    font-style: italic;
+}
+.header{
+    font-style: italic;
+    font-weight: bold;
+}
+.all_songs{
+    page-break-inside:avoid;
+    page-break-after: always;
+}
+.all_songs table{
+    font-size: x-small;
+}
+
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.all_songs h3{
+    margin-top: 15mm;
+}
+.ep_table{
+    font-size: small;
+}
+.spooky h5{
+    font-size:1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sk_pods h5{
+    font-size:1.1em;
+    font-weight: bold;
+    text-decoration: underline;
+}
