@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE spotify SYSTEM "spotify.dtd">
+<spotify language="EN">
+    
+    <music>
+        
+        <genres>
+            
+            <genre>
+                <name>Rock</name>
+
+                <subgenres>
+                    <subgenre subgenre_ID="m_1">
+                        <name>Alternative Rock</name>
+                        <count>2</count>
+                    </subgenre>
+                    <subgenre subgenre_ID="m_2">
+                        <name>Pop Rock</name>
+                        <count>1</count>
+                    </subgenre>
+                </subgenres>
+
+            </genre>
+
+            <genre>
+                
+                <name>Pop</name>
+
+                <subgenres>
+                    <subgenre subgenre_ID="m_3">
+                        <name>K-Pop</name>
+                        <count>3</count>
+                    </subgenre>
+                </subgenres>
+
+            </genre>
+        </genres>
+
+        <artists>
+            
+            <artist>
+                <name>Red Hot Chili Peppers</name>
+                <career_start>1983</career_start>
+                <followers>15 850 624</followers>
+                <album_count>2</album_count>
+                <albums>
+
+                    <album subgenre_ID="m_1" rating="5" popularity="high">
+                        
+                        <name>Californication</name>
+                        <release_date>8-6-1999</release_date>
+                        <track_count>15</track_count>
+
+                        <songs>
+
+                            <song rating="3">
+                                <track_num>1</track_num>
+                                <name>Around the World</name>
+                                <length>3:59</length>
+                            </song>
+
+                            <song rating="3">
+                                <track_num>2</track_num>
+                                <name>Parallel Universe</name>
+                                <length>4:29</length>
+                            </song>
+
+                            <song rating="5">
+                                <favourite_in_album />
+                                <track_num>3</track_num>
+                                <name>Scar Tissue</name>
+                                <length>3:36</length>
+                            </song>
+
+                            <song rating="5">
+                                <track_num>4</track_num>
+                                <name>Otherside</name>
+                                <length>4:15</length>
+                            </song>
+
+                            <song rating="2">
+                                <track_num>5</track_num>
+                                <name>Get on Top</name>
+                                <length>3:18</length>
+                            </song>
+
+                            <song rating="5">
+                                <track_num>6</track_num>
+                                <name>Californication</name>
+                                <length>5:30</length>
+                            </song>
+
+                            <song rating="2">
+                                <track_num>7</track_num>
+                                <name>Easily</name>
+                                <length>3:51</length>
+                            </song>
+
+                            <song rating="3">
+                                <track_num>8</track_num>
+                                <name>Porcelain</name>
+                                <length>2:44</length>
+                            </song>
+
+                            <song rating="3">
+                                <track_num>9</track_num>
+                                <name>Emit Remmus</name>
+                                <length>4:00</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>10</track_num>
+                                <name>I Like Dirt</name>
+                                <length>2:38</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>11</track_num>
+                                <name>This Velvet Glove</name>
+                                <length>3:45</length>
+                            </song>
+
+                            <song rating="3">
+                                <track_num>12</track_num>
+                                <name>Savior</name>
+                                <length>4:52</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>13</track_num>
+                                <name>Purple Stain</name>
+                                <length>4:13</length>
+                            </song>
+
+                            <song rating="2">
+                                <track_num>14</track_num>
+                                <name>Right on Time</name>
+                                <length>1:53</length>
+                            </song>
+
+                            <song rating="5">
+                                <track_num>15</track_num>
+                                <name>Road Trippin'</name>
+                                <length>3:25</length>
+                            </song>
+
+                        </songs>
+
+                    </album>
+
+                    <album subgenre_ID="m_1" rating="4" popularity="average">
+                        
+                        <name>The Getaway</name>
+                        <release_date>17-6-2016</release_date>
+                        <track_count>5</track_count>
+
+                        <songs>
+                            <song rating="5">
+                                <track_num>1</track_num>
+                                <name>The Getaway</name>
+                                <length>4:10</length>
+                            </song>
+
+                            <song rating="5">
+                                <favourite_in_album />
+                                <track_num>2</track_num>
+                                <name>Dark Necessities</name>
+                                <length>5:02</length>
+                            </song>
+
+                            <song rating="3">
+                                <track_num>7</track_num>
+                                <name>Go Robot</name>
+                                <length>4:24</length>
+                            </song>
+
+                            <song rating="3">
+                                <track_num>9</track_num>
+                                <name>Detroit</name>
+                                <length>3:47</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>13</track_num>
+                                <name>Dreams of a Samurai</name>
+                                <length>6:09</length>
+                            </song>
+                        </songs>
+
+                    </album>
+                </albums>
+            </artist>
+
+            <artist>
+                <name>Coldplay</name>
+                <career_start>1996</career_start>
+                <followers>17 520 663</followers>
+                <album_count>1</album_count>
+                <albums>
+                    <album subgenre_ID="m_2" rating="4" popularity="low">
+                        <name>Ghost Stories</name>
+                        <release_date>16-11-2014</release_date>
+                        <track_count>4</track_count>
+                        <songs>
+                            <song rating="3">
+                                <track_num>1</track_num>
+                                <name>Always in My Head</name>
+                                <length>3:37</length>
+                            </song>
+
+                            <song rating="5">
+                                <favourite_in_album />
+                                <track_num>2</track_num>
+                                <name>Magic</name>
+                                <length>4:45</length>
+                            </song>
+
+                            <song rating="2">
+                                <track_num>7</track_num>
+                                <name>Oceans</name>
+                                <length>5:22</length>
+                            </song>
+
+                            <song rating="5">
+                                <track_num>8</track_num>
+                                <name>A Sky Full of Stars</name>
+                                <length>4:28</length>
+                            </song>
+                        </songs>
+                    </album>
+                </albums>
+            </artist>
+
+            <artist>
+                <name>Mamamoo</name>
+                <career_start>2014</career_start>
+                <followers>12 580 653</followers>
+                <album_count>1</album_count>
+                <albums>
+                    <album subgenre_ID="m_3" rating="4" popularity="high">
+                        <name>Memory</name>
+                        <release_date>7-11-2016</release_date>
+                        <track_count>7</track_count>
+                        <songs>
+                            <song rating="3">
+                                <track_num>1</track_num>
+                                <name>Memory</name>
+                                <length>3:52</length>
+                            </song>
+
+                            <song rating="5">
+                                <favourite_in_album />
+                                <track_num>2</track_num>
+                                <name>Décalcomanie</name>
+                                <length>3:36</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>3</track_num>
+                                <name>NEW YORK</name>
+                                <length>3:02</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>4</track_num>
+                                <name>Moderato</name>
+                                <length>3:59</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>5</track_num>
+                                <name>Angel</name>
+                                <length>3:33</length>
+                            </song>
+
+                            <song rating="1">
+                                <track_num>6</track_num>
+                                <name>DAB DAB</name>
+                                <length>2:50</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>7</track_num>
+                                <name>I love too</name>
+                                <length>4:25</length>
+                            </song>
+
+                        </songs>
+
+                    </album>
+                </albums>
+            </artist>
+
+            <artist>
+                <name>BTS</name>
+                <career_start>2013</career_start>
+                <followers>50 480 854</followers>
+                <album_count>2</album_count>
+                <albums>
+                    <album subgenre_ID="m_3" rating="5" popularity="high">
+                        <name>MAP OF THE SOUL:PERSONA</name>
+                        <release_date>12-4-2019</release_date>
+                        <track_count>7</track_count>
+                        <songs>
+
+                            <song rating="5">
+                                <track_num>1</track_num>
+                                <name>Intro:Persona</name>
+                                <length>2:51</length>
+                            </song>
+
+                            <song rating="5">
+                                <favourite_in_album />
+                                <track_num>2</track_num>
+                                <name>Boy With Luv</name>
+                                <length>3:50</length>
+                                <featurings>
+                                    <featuring>Halsey</featuring>
+                                </featurings>
+                            </song>
+
+                            <song rating="5">
+                                <track_num>3</track_num>
+                                <name>Mikrokosmos</name>
+                                <length>3:44</length>
+                            </song>
+
+                            <song rating="5">
+                                <track_num>4</track_num>
+                                <name>Make It Right</name>
+                                <length>3:46</length>
+                            </song>
+
+                            <song rating="5">
+                                <track_num>5</track_num>
+                                <name>HOME</name>
+                                <length>3:54</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>6</track_num>
+                                <name>Jamais Vu</name>
+                                <length>3:47</length>
+                            </song>
+
+                            <song rating="4">
+                                <track_num>7</track_num>
+                                <name>Dionysus</name>
+                                <length>4:09</length>
+                            </song>
+
+                        </songs>
+                        
+                    </album>
+                    <album subgenre_ID="m_3" rating="2" popularity="average">
+
+                        <name>Black Swan</name>
+                        <release_date>17-1-2020</release_date>
+                        <track_count>1</track_count>
+                        <songs>
+                            <song rating="2">
+                                <favourite_in_album />
+                                <track_num>1</track_num>
+                                <name>Black Swan</name>
+                                <length>3:18</length>
+                            </song>
+                        </songs>
+                    </album>
+                </albums>
+            </artist>
+
+        </artists>
+
+    </music>
+
+    <other_content>
+
+        <podcast_genres>
+
+            <podcast_genre>
+                <name>Storytelling</name>
+                <subgenres>
+                    
+                    <subgenre subgenre_ID="p_1">
+                        <name>Horror</name>
+                        <count>1</count>
+                    </subgenre>
+
+                    <subgenre subgenre_ID="p_2">
+                        <name>Real-Life</name>
+                        <count>1</count>
+                    </subgenre>
+
+                </subgenres>
+            </podcast_genre>
+
+            <podcast_genre>
+                <name>Documentary</name>
+                <subgenres>
+                    <subgenre subgenre_ID="p_3">
+                        <name>True-Crime</name>
+                        <count>1</count>
+                    </subgenre>
+                </subgenres>
+            </podcast_genre>
+
+        </podcast_genres>
+
+        <podcasts>
+
+            <podcast subgenre_ID="p_1">
+                <name>Midnight Marinara</name>
+                <language>English</language>
+                <author>David King</author>
+                <first_date>30-10-2013</first_date>
+                <ep_count>3</ep_count>
+                <release_window>
+                    <day>Friday</day>
+                    <hour>20:00</hour>
+                    <periodicity>bimonthly</periodicity>
+                </release_window>
+                <description>
+                    Midnight Marinara is a seasonal podcast that serializes Creepypasta stories into full-fledged audio dramas and served by the 
+                    mysterious Pasta Shade, maitre d' of the macabre. Whether it's a well-known chiller or a deserving unknown that catches attention, 
+                    we strive to present an entertaining spin on these tales of suspense and terror. Produced, directed and mixed by David King, 
+                    and featuring an ever-changing cast of actors and authors, expect something new every time you listen. 
+                    Pour some of this on your favorite Creepypasta come midnight!
+                </description>
+
+                <episodes>
+                    <episode rating="4">
+                        <name>Episode 1 - "WHO WAS PHONE?"</name>
+                        <episode_num>1</episode_num>
+                        <release_date>30-10-2013</release_date>
+                        <length>2:15</length>
+                        <ep_description>
+                            Our pilot episode, a bite-sized story of great drama, suspense and horror.
+                            "So ur with ur honey and yur making out when the phone rigns..."
+                            <guest>Dennis Magat</guest>
+                            <guest>Angi Viper</guest>
+                        </ep_description>
+                        
+                    </episode>
+
+                    <episode rating="5">
+                        <name>Episode 1 - "Just Telling Stories"</name>
+                        <episode_num>2</episode_num>
+                        <release_date>18-11-2013</release_date>
+                        <length>23:42</length>
+                        <ep_description>
+                            Two people spending a night in a hotel room tell each other scary stories, and their imaginations begin to run wild...
+                            <guest>Jason Caits-Cheverst</guest>
+                            <guest>Sarah Llewellyn</guest>
+                        </ep_description>
+                    </episode>
+
+                    <episode rating="4">
+                        <name>Episode 3 - "The Art of Jacob Emory"</name>
+                        <episode_num>3</episode_num>
+                        <release_date>29-11-2013</release_date>
+                        <length>17:18</length>
+                        <ep_description>
+                            In a small town, an old man recounts the strange tale of Jacob Emory, whose art had vibrancy and life... Literally.
+                        </ep_description>
+                    </episode>
+                </episodes>
+
+            </podcast>
+
+            <podcast subgenre_ID="p_2">
+                <name>Doktor má Filipa</name>
+                <language>Slovak</language>
+                <author>MUDr. Jozef Fratrsík a Filip Machala</author>
+                <first_date>24-7-2020</first_date>
+                <ep_count>2</ep_count>
+                <release_window>
+                    <day>Wednesday</day>
+                    <hour>16:00</hour>
+                    <periodicity>weekly</periodicity>
+                </release_window>
+                <description>
+                    Jožko Fratrsík je lekár na urgentnom príjme v nemocnici SVET ZDRAVIA
+                    v Galante. Filip Machala je zdravotný brat na Poliklinike Karlova Ves v Bratislave.
+                    Spolu so svojimi hosťami sa rozprávajú o svojich zážitkoch a zároveň
+                    sa snažia svojich poslucháčov niečo aj nenásilnou formou naučiť.
+                </description>
+
+                <episodes>
+                    <episode rating="5">
+                        <name>S Doktormi sa už nezoznamujem</name>
+                        <episode_num>1</episode_num>
+                        <release_date>24-7-2020</release_date>
+                        <length>1:10:01</length>
+                        <ep_description>
+                            Záchranár Robo nám porozpráva napríklad aj o tom, prečo sa mu
+                            už ani neoplatí spoznávať sa s novými lekármi, ktorí k nim prídu.
+                            <guest>Róbert Froš</guest>
+                        </ep_description>
+                    </episode>
+
+                    <episode rating="4">
+                        <name>Všetci chcú byť chirurgovia</name>
+                        <episode_num>2</episode_num>
+                        <release_date>30-7-2020</release_date>
+                        <length>46:30</length>
+                        <ep_description>
+                            Čerstvá doktorka Lucka, ktorá bola kedysi netopierom, sa s nami
+                            podelí o pohľad začínajúceho lekára na slovenské zdravotníctvo
+                            a školstvo. Prečo skoro všetci jej spolužiaci túžia byť chirurgami?
+                            <guest>MUDr. Lucia Weiss</guest>
+                        </ep_description>
+                    </episode>
+                </episodes>
+            </podcast>
+
+            <podcast subgenre_ID="p_3">
+                <name>vražedné psyché</name>
+                <language>Slovak</language>
+                <author>Richard Mažonas</author>
+                <first_date>29-10-2020</first_date>
+                <ep_count>1</ep_count>
+                <release_window>
+                    <day>Thursday</day>
+                    <hour>18:00</hour>
+                    <periodicity>weekly</periodicity>
+                </release_window>
+                <description>
+                    Študent práva Richard Mažonas spovedá svojho starého otca MUDr. Svetozára Drobu,
+                    dlhoročného súdneho znalca z oblasti psychiatria na tému vrahov najmä z prostredia
+                    Česka a Slovenska.
+                </description>
+
+                <episodes>
+                    <episode rating="5">
+                        <name>Nočný Vrah</name>
+                        <episode_num>1</episode_num>
+                        <release_date>29-10-2020</release_date>
+                        <length>21:45</length>
+                        <ep_description>
+                            Svoje obete, prevažne staršie ženy, vraždil výhradne v noci. Na konci
+                            svojho vyčíňania za sebou nechal 9 obetí. Čo nám o ňom prezrádza jeho
+                            modus operandi?
+                            <guest>MUDr. Svetozár Droba</guest>
+                        </ep_description>
+                    </episode>
+
+                </episodes>
+            </podcast>
+
+
+
+        </podcasts>
+
+    </other_content>
+</spotify>
