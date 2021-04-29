@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('/transform', [XSLTController::class, 'index']);
 Route::get('/asg', [AssigmentController::class, 'index']);
 Route::get('/plot', [AssigmentController::class, 'grafik']);
+Route::get('/plot2', [AssigmentController::class, 'grafik2']);
